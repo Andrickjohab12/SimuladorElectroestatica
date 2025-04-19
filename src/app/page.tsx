@@ -150,6 +150,52 @@ export default function Home() {
                   <li>Como las cargas opuestas se atraen, los trozos de papel son atraídos hacia el globo.</li>
                 </ol>
               </div>
+
+              {/* Mathematical Calculations for Balloon Experiment */}
+              <div className="mt-6 bg-white p-4 rounded-md border border-blue-100">
+                <h4 className="text-lg font-medium text-blue-600 mb-3">Cálculos Matemáticos: Fuerza Electrostática</h4>
+
+                <p className="text-gray-700 mb-3">
+                  La fuerza electrostática entre el globo cargado y un trozo de papel se puede calcular utilizando la
+                  Ley de Coulomb:
+                </p>
+
+                <div className="bg-blue-50 p-4 rounded-md border border-blue-200 mb-4">
+                  <p className="text-center font-medium text-blue-800">F = k × (|q₁ × q₂|) / r²</p>
+                </div>
+
+                <p className="text-gray-700 mb-3">Donde:</p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                  <li>F = Fuerza electrostática (en Newtons, N)</li>
+                  <li>k = Constante de Coulomb = 9 × 10⁹ N·m²/C²</li>
+                  <li>q₁ = Carga del globo (en Coulombs, C)</li>
+                  <li>q₂ = Carga inducida en el papel (en Coulombs, C)</li>
+                  <li>r = Distancia entre las cargas (en metros, m)</li>
+                </ul>
+
+                <h5 className="text-md font-medium text-blue-600 mb-2">Ejemplo de cálculo:</h5>
+
+                <p className="text-gray-700 mb-3">Supongamos los siguientes valores típicos para este experimento:</p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                  <li>Carga del globo después de frotarlo: q₁ = -1 × 10⁻⁹ C</li>
+                  <li>Carga inducida en el papel: q₂ = +5 × 10⁻¹⁰ C</li>
+                  <li>Distancia entre el globo y el papel: r = 0.02 m (2 cm)</li>
+                </ul>
+
+                <div className="bg-blue-50 p-4 rounded-md border border-blue-200 mb-4">
+                  <p className="text-gray-800 font-mono whitespace-pre-line">
+                    F = 9 × 10⁹ × |-1 × 10⁻⁹ × 5 × 10⁻¹⁰| / (0.02)² F = 9 × 10⁹ × 5 × 10⁻¹⁹ / 4 × 10⁻⁴ F = 9 × 10⁹ ×
+                    1.25 × 10⁻¹⁵ F = 1.125 × 10⁻⁵ N
+                  </p>
+                </div>
+
+                <p className="text-gray-700">
+                  Esta fuerza de aproximadamente 11.25 micronewtons es pequeña, pero suficiente para mover los ligeros
+                  trozos de papel. La fuerza aumenta significativamente cuando la distancia disminuye (proporcional a
+                  1/r²), lo que explica por qué los trozos de papel son atraídos con más fuerza a medida que se acercan
+                  al globo.
+                </p>
+              </div>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 md:p-6">
@@ -180,6 +226,80 @@ export default function Home() {
                     electrostática.
                   </li>
                 </ol>
+              </div>
+
+              {/* Mathematical Calculations for Water Experiment */}
+              <div className="mt-6 bg-white p-4 rounded-md border border-blue-100">
+                <h4 className="text-lg font-medium text-blue-600 mb-3">
+                  Cálculos Matemáticos: Fuerza sobre Moléculas Polares
+                </h4>
+
+                <p className="text-gray-700 mb-3">
+                  La fuerza ejercida por la regla cargada sobre las moléculas polares del agua se puede calcular
+                  considerando la interacción entre la carga de la regla y el momento dipolar del agua:
+                </p>
+
+                <div className="bg-blue-50 p-4 rounded-md border border-blue-200 mb-4">
+                  <p className="text-center font-medium text-blue-800">F = |q × p × cosθ| / (4πε₀ × r³)</p>
+                </div>
+
+                <p className="text-gray-700 mb-3">Donde:</p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                  <li>F = Fuerza sobre la molécula de agua (en Newtons, N)</li>
+                  <li>q = Carga de la regla (en Coulombs, C)</li>
+                  <li>p = Momento dipolar del agua = 6.2 × 10⁻³⁰ C·m</li>
+                  <li>θ = Ángulo entre el dipolo y el campo eléctrico</li>
+                  <li>ε₀ = Permitividad del vacío = 8.85 × 10⁻¹² F/m</li>
+                  <li>r = Distancia entre la regla y la molécula de agua (en metros, m)</li>
+                </ul>
+
+                <h5 className="text-md font-medium text-blue-600 mb-2">Ejemplo de cálculo:</h5>
+
+                <p className="text-gray-700 mb-3">Supongamos los siguientes valores para este experimento:</p>
+                <ul className="list-disc list-inside space-y-1 text-gray-700 mb-4">
+                  <li>Carga de la regla después de frotarla: q = -2 × 10⁻⁸ C</li>
+                  <li>Distancia entre la regla y el chorro de agua: r = 0.05 m (5 cm)</li>
+                  <li>Ángulo θ = 0° (asumiendo alineación óptima del dipolo)</li>
+                </ul>
+
+                <div className="bg-blue-50 p-4 rounded-md border border-blue-200 mb-4">
+                  <p className="text-gray-800 font-mono whitespace-pre-line">
+                    F = |-2 × 10⁻⁸ × 6.2 × 10⁻³⁰ × cos(0°)| / (4π × 8.85 × 10⁻¹² × (0.05)³) F = |
+                    {"-2 × 10⁻⁸ × 6.2 × 10⁻³⁰ × 1"} | / (4π × 8.85 × 10⁻¹² × 1.25 × 10⁻⁴) F = 1.24 × 10⁻³⁷ / 1.39 ×
+                    10⁻¹⁴ F = 8.92 × 10⁻²⁴ N
+                  </p>
+                </div>
+
+                <p className="text-gray-700 mb-4">
+                  Esta fuerza parece extremadamente pequeña, pero debemos considerar que:
+                </p>
+
+                <ol className="list-decimal list-inside space-y-1 text-gray-700 mb-4">
+                  <li>Actúa sobre cada molécula de agua individualmente</li>
+                  <li>
+                    Un pequeño volumen de agua contiene un número enorme de moléculas (aproximadamente 3.3 × 10²²
+                    moléculas por mililitro)
+                  </li>
+                  <li>El efecto acumulativo es significativo</li>
+                </ol>
+
+                <p className="text-gray-700 mb-3">
+                  Para calcular la fuerza total sobre un volumen de agua, multiplicamos por el número de moléculas:
+                </p>
+
+                <div className="bg-blue-50 p-4 rounded-md border border-blue-200 mb-4">
+                  <p className="text-gray-800 font-mono whitespace-pre-line">
+                    F_total = F_molécula × Número de moléculas F_total = 8.92 × 10⁻²⁴ N × (3.3 × 10²² moléculas/ml × 0.1
+                    ml) F_total = 8.92 × 10⁻²⁴ N × 3.3 × 10²¹ moléculas F_total = 2.94 × 10⁻² N
+                  </p>
+                </div>
+
+                <p className="text-gray-700">
+                  Esta fuerza total de aproximadamente 0.03 N es suficiente para desviar visiblemente un chorro de agua
+                  delgado. Además, la fuerza aumenta drásticamente a medida que la distancia disminuye (proporcional a
+                  1/r³), lo que explica por qué la curvatura del chorro de agua es más pronunciada cuando la regla está
+                  más cerca.
+                </p>
               </div>
             </div>
           </div>
