@@ -51,13 +51,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="md:w-1/2">
-                <Image
-                  src="/placeholder.svg?height=300&width=500"
-                  alt="Ilustración de electrostática"
-                  width={500}
-                  height={300}
-                  className="rounded-lg shadow-md"
-                />
+             
               </div>
             </div>
           </div>
