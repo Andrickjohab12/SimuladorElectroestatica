@@ -13,7 +13,7 @@ export function WaterExperiment() {
   const containerRef = useRef<HTMLDivElement>(null)
   const rulerRef = useRef<HTMLDivElement>(null)
   const waterStreamRef = useRef<HTMLCanvasElement>(null)
-  const animationRef = useRef<number>()
+  const animationRef = useRef<number | null>(null)
 
   // Reset the simulation
   const resetSimulation = () => {
