@@ -1,4 +1,4 @@
-<h2>ASimuladorElectroestatica</h2>
+<h2>SimuladorElectroestatica</h2>
 <br><br>
 Simulador de el funcionamiento de la electroestatica
   <br><br>
